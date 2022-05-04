@@ -431,7 +431,7 @@ SELECT *
 FROM peliculas
 LEFT OUTER JOIN salas ON salas.PELICULA = peliculas.CODIGO;
 
-/*.7. Mostrar los nombres de las películas que no se proyectan en ninguna
+/*4.7. Mostrar los nombres de las películas que no se proyectan en ninguna
 sala.*/
 
 SELECT peliculas.NOMBRE
@@ -446,7 +446,7 @@ INSERT INTO peliculas VALUES(10, 'Uno, Dos, Tres', '7');
 
 /*4.9 Hacer constar
 que todas las peliculas no calificadas han sido
-calificadas 'no reco- mendables para menores de 13 afños.*/
+calificadas 'no reco- mendables para menores de 13 años.*/
 
 UPDATE peliculas SET CALIFICACIONEDAD = 13
 WHERE CALIFICACIONEDAD IS null;
@@ -456,7 +456,7 @@ todos los públicos.*/
 
 
 SELECT *
-from peliculas;
+FROM peliculas;
 DELETE FROM salas WHERE PELICULA IN 
 (SELECT CODIGO 
 FROM peliculas
