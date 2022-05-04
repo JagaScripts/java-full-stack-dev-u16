@@ -37,7 +37,7 @@ SELECT *
 FROM peliculas
 LEFT OUTER JOIN salas ON salas.PELICULA = peliculas.CODIGO;
 
-/*.7. Mostrar los nombres de las películas que no se proyectan en ninguna
+/*4.7. Mostrar los nombres de las películas que no se proyectan en ninguna
 sala.*/
 
 SELECT peliculas.NOMBRE
@@ -61,8 +61,8 @@ WHERE CALIFICACIONEDAD IS null;
 todos los públicos.*/
 
 
-select *
-from peliculas;
+SELECT *
+FROM peliculas;
 DELETE FROM salas WHERE PELICULA IN 
 (SELECT CODIGO 
 FROM peliculas
