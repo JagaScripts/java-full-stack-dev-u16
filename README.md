@@ -1,6 +1,7 @@
 # java-full-stack-dev-u16
 Este repositorio corresponde a ejercicios realizados en la formación de Java Full Stack Developer, concretamente a la unidad 16 DML
 
+##Ejercicio 1
 
 ``` sql
 USE actividades;
@@ -143,7 +144,7 @@ UPDATE articulos
 SET PRECIO = PRECIO - 10
 WHERE PRECIO >= 120;
 ```
-
+##Ejercicio 2
 
 ``` sql
 USE actividades;
@@ -289,8 +290,7 @@ WHERE PRESUPUESTO > 60000);
 
 DELETE FROM empleados;
 ```
-
-
+##Ejercicio 3
 
 ``` sql
 USE actividades;
@@ -389,7 +389,7 @@ WHERE CAPACIDAD <
 (SELECT COUNT(*)  
 WHERE ALMACEN = CODIGO));
 ```
-
+##Ejercicio 4
 
 ``` sql
 USE actividades;
